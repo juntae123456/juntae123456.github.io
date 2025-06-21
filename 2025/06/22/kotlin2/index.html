@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://Juntae123456.github.io/tags/blog/"/>
+    <link rel="canonical" href="http://Juntae123456.github.io/2025/06/22/kotlin2/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -30,7 +30,7 @@
     
     <title>
         
-            태그: blog | Juncoding&#39;s Blog
+            Kotlin 고급 문법 정리 | Juncoding&#39;s Blog
         
     </title>
 
@@ -479,58 +479,322 @@
 			
 
 			<div class="main-content">
-				<div class="page-template-container">
-	
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-	
-	<div class="tag-name">
-    <i class="fa-solid fa-tag"></i>&nbsp;blog
-</div>
-<div class="tag-post-list">
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Kotlin 고급 문법 정리</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/juncoding-logo.png">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">juntae123456</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-06-22 11:00</span>
+        <span class="mobile">2025-06-22 11:00</span>
+        <span class="hover-info">작성</span>
+    </span>
     
-<div class="archive-list-container">
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-06-21 18:26:40</span>
+            <span class="mobile">2025-06-21 18:26:40</span>
+            <span class="hover-info">수정</span>
+        </span>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2025</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
                 
                     
+                        
+                        <li>
+                            <a href="/categories/kotlin/">kotlin</a>&nbsp;
+                        </li>
                     
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='06-19'>
-                    
-                    <a href="/2025/06/19/first/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">Hexo 블로그 제작 가이드</span>
-                    </a>
                     
                 
-                </li> <!-- Ensure the last item is properly closed -->
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/kotlin/Advanced/">Advanced</a>&nbsp;
+                        </li>
+                    
+                    
+                
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/kotlin/">kotlin</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Android/">Android</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>363 글자</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 분</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<p>이전 포스트에서는 Kotlin의 기초 문법을 정리했습니다.<br>이번에는 앱 개발에서 꼭 알아두면 좋은 <strong>Kotlin 고급 문법</strong>을 소개하려고 합니다.<br>조금 더 효율적이고 안전한 코드를 작성하고 싶은 분들을 위한 내용입니다.</p>
+<h2 id="💎-Data-Class-데이터-클래스"><a href="#💎-Data-Class-데이터-클래스" class="headerlink" title="💎 Data Class (데이터 클래스)"></a>💎 Data Class (데이터 클래스)</h2><p>값만 저장하는 용도로 사용하는 클래스를 간편하게 만들 수 있습니다.</p>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">data</span> <span class="keyword">class</span> <span class="title class_">User</span>(<span class="keyword">val</span> name: String, <span class="keyword">val</span> age: <span class="built_in">Int</span>)</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><code>toString()</code>, <code>equals()</code>, <code>hashCode()</code>, <code>copy()</code> 등이 자동 생성됩니다.</li>
+</ul>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> user1 = User(<span class="string">&quot;Juntae&quot;</span>, <span class="number">25</span>)</span><br><span class="line"><span class="keyword">val</span> user2 = user1.copy(age = <span class="number">26</span>)</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h2 id="🔧-Scope-Functions-스코프-함수"><a href="#🔧-Scope-Functions-스코프-함수" class="headerlink" title="🔧 Scope Functions (스코프 함수)"></a>🔧 Scope Functions (스코프 함수)</h2><p>객체 초기화, 수정, 임시 범위 설정 등에 사용되는 Kotlin 특유의 함수입니다.</p>
+<table>
+<thead>
+<tr>
+<th>함수명</th>
+<th>키워드</th>
+<th>반환</th>
+<th>주 용도</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>let</code></td>
+<td>it</td>
+<td>마지막 줄</td>
+<td>null 체크, 결과 변환</td>
+</tr>
+<tr>
+<td><code>run</code></td>
+<td>this</td>
+<td>마지막 줄</td>
+<td>실행 블록</td>
+</tr>
+<tr>
+<td><code>apply</code></td>
+<td>this</td>
+<td>객체</td>
+<td>초기화</td>
+</tr>
+<tr>
+<td><code>also</code></td>
+<td>it</td>
+<td>객체</td>
+<td>부가 동작</td>
+</tr>
+<tr>
+<td><code>with</code></td>
+<td>this</td>
+<td>마지막 줄</td>
+<td>여러 연산 묶기</td>
+</tr>
+</tbody></table>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> user = User(<span class="string">&quot;Juntae&quot;</span>, <span class="number">25</span>).apply &#123;</span><br><span class="line">    println(<span class="string">&quot;이름: <span class="variable">$name</span>, 나이: <span class="variable">$age</span>&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h2 id="⏱-Coroutine-코루틴"><a href="#⏱-Coroutine-코루틴" class="headerlink" title="⏱ Coroutine (코루틴)"></a>⏱ Coroutine (코루틴)</h2><p>비동기 작업을 간단하게 처리할 수 있는 Kotlin의 기능입니다.</p>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">suspend</span> <span class="function"><span class="keyword">fun</span> <span class="title">loadData</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> result = withContext(Dispatchers.IO) &#123;</span><br><span class="line">        api.getData()</span><br><span class="line">    &#125;</span><br><span class="line">    println(result)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><code>suspend</code>: 일시 중단 가능한 함수</li>
+<li><code>Dispatchers.IO</code>, <code>Dispatchers.Main</code> 등으로 스레드 지정</li>
+</ul>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GlobalScope.launch &#123;</span><br><span class="line">    loadData()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>Android에서는 <code>viewModelScope.launch &#123;&#125;</code> 와 같이 ViewModel 안에서 자주 사용됩니다.</p>
+</blockquote>
+<hr>
+<h2 id="➕-Extension-Functions-확장-함수"><a href="#➕-Extension-Functions-확장-함수" class="headerlink" title="➕ Extension Functions (확장 함수)"></a>➕ Extension Functions (확장 함수)</h2><p>기존 클래스에 <strong>새로운 기능을 추가</strong>할 수 있습니다.</p>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> String.<span class="title">sayHello</span><span class="params">()</span></span> &#123;</span><br><span class="line">    println(<span class="string">&quot;Hello, <span class="variable">$this</span>!&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;Juntae&quot;</span>.sayHello()  <span class="comment">// Hello, Juntae!</span></span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>유틸성 기능이나 UI 동작 확장 시 자주 사용됩니다.</li>
+</ul>
+<hr>
+<h2 id="🧩-Sealed-Class-봉인-클래스"><a href="#🧩-Sealed-Class-봉인-클래스" class="headerlink" title="🧩 Sealed Class (봉인 클래스)"></a>🧩 Sealed Class (봉인 클래스)</h2><p>상속받는 클래스의 종류를 <strong>제한</strong>하여 안정적인 <code>when</code> 분기를 가능하게 합니다.</p>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title class_">Result</span></span><br><span class="line"><span class="keyword">data</span> <span class="keyword">class</span> <span class="title class_">Success</span>(<span class="keyword">val</span> <span class="keyword">data</span>: String) : Result()</span><br><span class="line"><span class="keyword">object</span> Loading : Result()</span><br><span class="line"><span class="keyword">object</span> Error : Result()</span><br></pre></td></tr></table></figure></div>
+
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">handle</span><span class="params">(result: <span class="type">Result</span>)</span></span> = <span class="keyword">when</span>(result) &#123;</span><br><span class="line">    <span class="keyword">is</span> Success -&gt; println(result.<span class="keyword">data</span>)</span><br><span class="line">    Loading -&gt; println(<span class="string">&quot;로딩 중&quot;</span>)</span><br><span class="line">    Error -&gt; println(<span class="string">&quot;에러 발생&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h2 id="🔠-Enum-Class-열거형-클래스"><a href="#🔠-Enum-Class-열거형-클래스" class="headerlink" title="🔠 Enum Class (열거형 클래스)"></a>🔠 Enum Class (열거형 클래스)</h2><p>미리 정해진 값들로만 상태를 표현할 때 사용합니다.</p>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="keyword">class</span> <span class="title class_">Direction</span> &#123;</span><br><span class="line">    NORTH, SOUTH, EAST, WEST</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><code>when</code> 문이나 UI 상태 제어 등에서 자주 사용됩니다.</li>
+</ul>
+<hr>
+<h2 id="🛠-기타-유용한-문법"><a href="#🛠-기타-유용한-문법" class="headerlink" title="🛠 기타 유용한 문법"></a>🛠 기타 유용한 문법</h2><h3 id="고차-함수"><a href="#고차-함수" class="headerlink" title="고차 함수"></a>고차 함수</h3><p>함수를 <strong>매개변수로 받거나 반환하는 함수</strong>입니다.</p>
+<div class="code-container" data-rel="Kotlin"><figure class="iseeu highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">operate</span><span class="params">(a: <span class="type">Int</span>, b: <span class="type">Int</span>, op: (<span class="type">Int</span>, <span class="type">Int</span>) -&gt; <span class="type">Int</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> op(a, b)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> sum = operate(<span class="number">3</span>, <span class="number">5</span>) &#123; x, y -&gt; x + y &#125;</span><br><span class="line">println(sum)  <span class="comment">// 8</span></span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h2 id="✅-마무리"><a href="#✅-마무리" class="headerlink" title="✅ 마무리"></a>✅ 마무리</h2><p>Kotlin의 고급 문법은 코드를 더 <strong>효율적이고 안정적</strong>으로 만들어줍니다.  </p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>제목:</strong> Kotlin 고급 문법 정리</li>
+        <li><strong>작성자:</strong> juntae123456</li>
+        <li><strong>작성일
+                :</strong> 2025-06-22 11:00:00</li>
+        
+            <li>
+                <strong>수정일
+                    :</strong> 2025-06-21 18:26:40
+            </li>
+        
+        <li>
+            <strong>링크:</strong> https://juntae123456.github.io/2025/06/22/kotlin2/
+        </li>
+        <li>
+            <strong>
+                저작권 안내:
+            </strong>
+            
+
+            
+                이 글은 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 라이선스를 사용합니다.
+            
+        </li>
+    </ul>
 </div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/kotlin/">#kotlin</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/Android/">#Android</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2025/06/21/kotlin/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">Kotlin 기초 문법 정리</span>
+						<span class="post-nav-item">다음 글</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div id="comment-anchor" class="w-full h-2.5"></div>
+			<div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+				댓글
+			</div>
+			<script data-swup-reload-script>
+    function loadUtterances() {
+      const commentBox = document.querySelector('.comment-container');
+      if (!commentBox || commentBox.querySelector('iframe')) return;
+
+      const script = document.createElement('script');
+      script.setAttribute('src', 'https://utteranc.es/client.js');
+      script.setAttribute('repo', 'juntae123456/juntae123456.github.io');
+      script.setAttribute('issue-term', 'pathname');
+      script.setAttribute('theme', 'icy-dark');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.setAttribute('async', '');
+
+      commentBox.appendChild(script);
+    }
+
+    document.addEventListener('DOMContentLoaded', loadUtterances);
+    try {
+      swup.hooks.on('page:view', loadUtterances);
+    } catch (e) {}
+  </script>
+		</div>
+	</div>
+
 	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">목차</div>
+		<div class="page-title">Kotlin 고급 문법 정리</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%92%8E-Data-Class-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%81%B4%EB%9E%98%EC%8A%A4"><span class="nav-text">💎 Data Class (데이터 클래스)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%A7-Scope-Functions-%EC%8A%A4%EC%BD%94%ED%94%84-%ED%95%A8%EC%88%98"><span class="nav-text">🔧 Scope Functions (스코프 함수)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%8F%B1-Coroutine-%EC%BD%94%EB%A3%A8%ED%8B%B4"><span class="nav-text">⏱ Coroutine (코루틴)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9E%95-Extension-Functions-%ED%99%95%EC%9E%A5-%ED%95%A8%EC%88%98"><span class="nav-text">➕ Extension Functions (확장 함수)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%A7%A9-Sealed-Class-%EB%B4%89%EC%9D%B8-%ED%81%B4%EB%9E%98%EC%8A%A4"><span class="nav-text">🧩 Sealed Class (봉인 클래스)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%A0-Enum-Class-%EC%97%B4%EA%B1%B0%ED%98%95-%ED%81%B4%EB%9E%98%EC%8A%A4"><span class="nav-text">🔠 Enum Class (열거형 클래스)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%9B%A0-%EA%B8%B0%ED%83%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%AC%B8%EB%B2%95"><span class="nav-text">🛠 기타 유용한 문법</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98"><span class="nav-text">고차 함수</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%85-%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="nav-text">✅ 마무리</span></a></li></ol>
 
-	<div class="page-template-content markdown-body">
-		
-
-		
-	</div>
-
-	<div class="page-template-comments">
-		
 	</div>
 </div>
-
-<div class="paginator">
-	<span class="page-number current">1</span>
+	</div>
+	
 </div>
-  
 			</div>
 
 			
@@ -612,6 +876,26 @@
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
@@ -715,6 +999,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 
